@@ -4,10 +4,11 @@ using SampleAspNet.Application.Entities;
 
 namespace SampleAspNet.Application.Storage.UserRole
 {
-    public class UserRoleRepository : BaseBusinessService<Domain.Entities.UserRole, UserRoleDto>
+    public sealed class UserRoleRepository : BaseBusinessService<Domain.Entities.UserRole, UserRoleDto>
     {
         public UserRoleRepository(IDataService<Domain.Entities.UserRole> dataService) : base(dataService)
         {
+            Mapper = InitializeMapper();
         }
     }
 }

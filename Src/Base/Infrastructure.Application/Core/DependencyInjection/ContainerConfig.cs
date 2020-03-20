@@ -3,16 +3,11 @@ using Autofac.Core;
 
 namespace Infrastructure.Application.Core.DependencyInjection
 {
-    public sealed class ContainerConfig<TModule> : IContainerConfig where TModule : IModule, new()
+    public class ContainerConfig<TModule> : IContainerConfig where TModule : IModule, new()
     {
-        public ContainerConfig()
-        {
-            Container = Build();
-        }
+        public IContainer Container { get; protected set; }
 
-        public IContainer Container { get; }
-
-        public IContainer Build()
+        public virtual IContainer Build()
         {
             var builder = new ContainerBuilder();
             builder.RegisterModule<TModule>();

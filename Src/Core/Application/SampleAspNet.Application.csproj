@@ -70,7 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInjectionModule.cs" />
+    <Compile Include="DependencyInjection.cs" />
     <Compile Include="Entities\AnswerDto.cs" />
     <Compile Include="Entities\GroupDto.cs" />
     <Compile Include="Entities\GroupTestDto.cs" />
@@ -112,10 +112,6 @@
     <ProjectReference Include="..\..\Base\Infrastructure.Application\Infrastructure.Application.csproj">
       <Project>{a79fbcf6-e971-4c53-8150-6bc5fb1d8778}</Project>
       <Name>Infrastructure.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Base\Persistence\SampleAspNet.Persistence.csproj">
-      <Project>{B358BDE9-46BE-4A66-A580-465841A75A33}</Project>
-      <Name>SampleAspNet.Persistence</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\SampleAspNet.Domain.csproj">
       <Project>{BB4B630F-AF2B-4371-997D-963132A6F372}</Project>
