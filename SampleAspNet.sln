@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNet.Persistence", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNet.Domain", "Src\Core\Domain\SampleAspNet.Domain.csproj", "{BB4B630F-AF2B-4371-997D-963132A6F372}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "generic", "generic", "{224FD313-45C5-4805-A29D-F01968409BCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNet.Application", "Src\Core\Application\SampleAspNet.Application.csproj", "{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{BB4B630F-AF2B-4371-997D-963132A6F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB4B630F-AF2B-4371-997D-963132A6F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB4B630F-AF2B-4371-997D-963132A6F372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,8 @@ Global
 		{2A6E25F9-F187-42E2-AFD5-00FA919B0736} = {E5936147-ED45-42CE-8051-460EBC8A129C}
 		{B358BDE9-46BE-4A66-A580-465841A75A33} = {2A6E25F9-F187-42E2-AFD5-00FA919B0736}
 		{BB4B630F-AF2B-4371-997D-963132A6F372} = {2E9B2D95-0AD4-46E8-91B8-3A3F1CA59DD5}
+		{224FD313-45C5-4805-A29D-F01968409BCB} = {E5936147-ED45-42CE-8051-460EBC8A129C}
+		{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F} = {2E9B2D95-0AD4-46E8-91B8-3A3F1CA59DD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50E651AA-44BA-4E57-80A5-DF8D3768754A}
