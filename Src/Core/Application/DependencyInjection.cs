@@ -5,7 +5,12 @@ using SampleAspNet.Application.Entities;
 using SampleAspNet.Application.Storage.Answer;
 using SampleAspNet.Application.Storage.Group;
 using SampleAspNet.Application.Storage.GroupTest;
+using SampleAspNet.Application.Storage.Question;
+using SampleAspNet.Application.Storage.Role;
+using SampleAspNet.Application.Storage.StudentTest;
+using SampleAspNet.Application.Storage.Test;
 using SampleAspNet.Application.Storage.User;
+using SampleAspNet.Application.Storage.UserRole;
 using SampleAspNet.Domain.Entities;
 
 namespace SampleAspNet.Application
@@ -17,10 +22,12 @@ namespace SampleAspNet.Application
             RegisterStorage<AnswerService, Answer, AnswerRepository, AnswerDto>(builder);
             RegisterStorage<GroupService, Group, GroupRepository, GroupDto>(builder);
             RegisterStorage<GroupTestService, GroupTest, GroupTestRepository, GroupTestDto>(builder);
-
-            // TODO: Here.
-
+            RegisterStorage<QuestionService, Question, QuestionRepository, QuestionDto>(builder);
+            RegisterStorage<RoleService, Role, RoleRepository, RoleDto>(builder);
+            RegisterStorage<StudentTestService, StudentTest, StudentTestRepository, StudentTestDto>(builder);
+            RegisterStorage<TestService, Test, TestRepository, TestDto>(builder);
             RegisterStorage<UserService, User, UserRepository, UserDto>(builder);
+            RegisterStorage<UserRoleService, UserRole, UserRoleRepository, UserRoleDto>(builder);
         }
 
         // ReSharper disable once MemberCanBeMadeStatic.Local
