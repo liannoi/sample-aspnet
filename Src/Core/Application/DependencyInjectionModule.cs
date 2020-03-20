@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using ApplicationGeneric.Core.BusinessServices;
-using ApplicationGeneric.Core.DataServices;
 using Autofac;
+using Infrastructure.Application.Core.BusinessServices;
+using Infrastructure.Application.Core.DataServices;
 using SampleAspNet.Application.Entities;
 using SampleAspNet.Application.Storage.User;
 using SampleAspNet.Domain.Entities;

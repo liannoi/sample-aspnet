@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace ApplicationGeneric.Core.BusinessServices
+namespace Infrastructure.Application.Core.BusinessServices
 {
     public interface IBusinessService<TBEntity> where TBEntity : class, new()
     {

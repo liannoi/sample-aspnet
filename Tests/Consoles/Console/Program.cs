@@ -1,7 +1,7 @@
 ﻿using System.Linq;
-using ApplicationGeneric.Core.BusinessServices;
-using ApplicationGeneric.Core.DependencyInjection;
 using Autofac;
+using Infrastructure.Application.Core.BusinessServices;
+using Infrastructure.Application.Core.DependencyInjection;
 using SampleAspNet.Application;
 using SampleAspNet.Application.Entities;
 

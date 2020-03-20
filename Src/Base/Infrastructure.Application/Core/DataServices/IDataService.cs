@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace ApplicationGeneric.Core.DataServices
+namespace Infrastructure.Application.Core.DataServices
 {
     public interface IDataService<TEntity> where TEntity : class, new()
     {

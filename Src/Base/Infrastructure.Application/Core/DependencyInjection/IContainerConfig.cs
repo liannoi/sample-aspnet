@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-namespace ApplicationGeneric.Core.DependencyInjection
+namespace Infrastructure.Application.Core.DependencyInjection
 {
     public interface IContainerConfig
     {

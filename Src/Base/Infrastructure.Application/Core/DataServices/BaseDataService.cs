@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace ApplicationGeneric.Core.DataServices
+namespace Infrastructure.Application.Core.DataServices
 {
     public abstract class BaseDataService<TEntity> : IDataService<TEntity> where TEntity : class, new()
     {

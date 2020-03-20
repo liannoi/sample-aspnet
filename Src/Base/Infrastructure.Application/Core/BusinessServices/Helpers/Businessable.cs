@@ -2,7 +2,7 @@
 using System.Linq;
 using AutoMapper;
 
-namespace ApplicationGeneric.Core.BusinessServices.Helpers
+namespace Infrastructure.Application.Core.BusinessServices.Helpers
 {
     public static class Businessable
     {

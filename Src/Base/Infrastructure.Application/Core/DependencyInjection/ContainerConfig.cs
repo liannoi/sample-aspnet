@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Autofac.Core;
 
-namespace ApplicationGeneric.Core.DependencyInjection
+namespace Infrastructure.Application.Core.DependencyInjection
 {
     public sealed class ContainerConfig<TModule> : IContainerConfig where TModule : IModule, new()
     {

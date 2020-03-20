@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using ApplicationGeneric.Core.BusinessServices.Helpers;
-using ApplicationGeneric.Core.DataServices;
 using AutoMapper;
 using AutoMapper.Extensions.ExpressionMapping;
+using Infrastructure.Application.Core.BusinessServices.Helpers;
+using Infrastructure.Application.Core.DataServices;
 
-namespace ApplicationGeneric.Core.BusinessServices
+namespace Infrastructure.Application.Core.BusinessServices
 {
     public abstract class BaseBusinessService<TEntity, TBEntity> : IBusinessService<TBEntity>
         where TBEntity : class, new() where TEntity : class, new()

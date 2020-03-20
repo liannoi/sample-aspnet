@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using ApplicationGeneric.Core.DataServices;
+using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.User
 {

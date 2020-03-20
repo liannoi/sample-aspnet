@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ApplicationGeneric.Core
+namespace Infrastructure.Application.Core
 {
     public interface IUnitOfWork : IDisposable
     {

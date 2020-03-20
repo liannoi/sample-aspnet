@@ -74,6 +74,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Src\Base\Infrastructure.Application\Infrastructure.Application.csproj">
+      <Project>{a79fbcf6-e971-4c53-8150-6bc5fb1d8778}</Project>
+      <Name>Infrastructure.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Src\Base\Persistence\SampleAspNet.Persistence.csproj">
       <Project>{b358bde9-46be-4a66-a580-465841a75a33}</Project>
       <Name>SampleAspNet.Persistence</Name>
@@ -81,10 +85,6 @@
     <ProjectReference Include="..\..\..\Src\Core\Application\SampleAspNet.Application.csproj">
       <Project>{82f6f4e4-65ab-4d0f-a1e9-be7c2a134f2f}</Project>
       <Name>SampleAspNet.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Src\Core\Generic\ApplicationGeneric.csproj">
-      <Project>{A79FBCF6-E971-4C53-8150-6BC5FB1D8778}</Project>
-      <Name>ApplicationGeneric</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

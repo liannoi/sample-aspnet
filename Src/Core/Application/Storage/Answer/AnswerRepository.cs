@@ -1,5 +1,5 @@
-﻿using ApplicationGeneric.Core.BusinessServices;
-using ApplicationGeneric.Core.DataServices;
+﻿using Infrastructure.Application.Core.BusinessServices;
+using Infrastructure.Application.Core.DataServices;
 using SampleAspNet.Application.Entities;
 
 namespace SampleAspNet.Application.Storage.Answer
