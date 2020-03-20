@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@section Scripts {
+    <script>
+        async function runtime() {
+            return await fetch(new Request('https://localhost:44398/api/answers/11'),
+                    {
+                        mode: 'cors'
+                    }).then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                });
+        }
+
+        runtime();
+    </script>
+}
