@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}</ProjectGuid>
+    <ProjectGuid>{A79FBCF6-E971-4C53-8150-6BC5FB1D8778}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleAspNet.Application</RootNamespace>
-    <AssemblyName>SampleAspNet.Application</AssemblyName>
+    <RootNamespace>ApplicationGeneric</RootNamespace>
+    <AssemblyName>ApplicationGeneric</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -70,42 +70,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInjectionModule.cs" />
-    <Compile Include="Entities\AnswerDto.cs" />
-    <Compile Include="Entities\GroupDto.cs" />
-    <Compile Include="Entities\GroupTestDto.cs" />
-    <Compile Include="Entities\QuestionDto.cs" />
-    <Compile Include="Entities\RoleDto.cs" />
-    <Compile Include="Entities\StudentTestDto.cs" />
-    <Compile Include="Entities\TestDto.cs" />
-    <Compile Include="Entities\UserDto.cs" />
-    <Compile Include="Entities\UserRoleDto.cs" />
+    <Compile Include="Core\BusinessServices\BaseBusinessService.cs" />
+    <Compile Include="Core\BusinessServices\Helpers\Businessable.cs" />
+    <Compile Include="Core\BusinessServices\IBusinessService.cs" />
+    <Compile Include="Core\DataServices\BaseDataService.cs" />
+    <Compile Include="Core\DataServices\IDataService.cs" />
+    <Compile Include="Core\DependencyInjection\ContainerConfig.cs" />
+    <Compile Include="Core\DependencyInjection\IContainerConfig.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Storage\User\UserRepository.cs" />
-    <Compile Include="Storage\User\UserService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-    <Folder Include="UnitOfWork\Core\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Base\Persistence\SampleAspNet.Persistence.csproj">
-      <Project>{B358BDE9-46BE-4A66-A580-465841A75A33}</Project>
-      <Name>SampleAspNet.Persistence</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Domain\SampleAspNet.Domain.csproj">
-      <Project>{BB4B630F-AF2B-4371-997D-963132A6F372}</Project>
-      <Name>SampleAspNet.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Generic\ApplicationGeneric.csproj">
-      <Project>{A79FBCF6-E971-4C53-8150-6BC5FB1D8778}</Project>
-      <Name>ApplicationGeneric</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

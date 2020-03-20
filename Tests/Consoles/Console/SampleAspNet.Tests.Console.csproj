@@ -5,18 +5,19 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleAspNet.Application</RootNamespace>
-    <AssemblyName>SampleAspNet.Application</AssemblyName>
+    <ProjectGuid>{54FB886A-5A8C-46B5-B146-5DA522B29FF7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SampleAspNet.Tests.Console</RootNamespace>
+    <AssemblyName>SampleAspNet.Tests.Console</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -26,6 +27,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,12 +38,6 @@
   <ItemGroup>
     <Reference Include="Autofac, Version=5.1.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Autofac.5.1.2\lib\net461\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
-    </Reference>
-    <Reference Include="AutoMapper.Extensions.ExpressionMapping, Version=3.1.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\AutoMapper.Extensions.ExpressionMapping.3.1.0\lib\net461\AutoMapper.Extensions.ExpressionMapping.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
@@ -70,38 +66,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInjectionModule.cs" />
-    <Compile Include="Entities\AnswerDto.cs" />
-    <Compile Include="Entities\GroupDto.cs" />
-    <Compile Include="Entities\GroupTestDto.cs" />
-    <Compile Include="Entities\QuestionDto.cs" />
-    <Compile Include="Entities\RoleDto.cs" />
-    <Compile Include="Entities\StudentTestDto.cs" />
-    <Compile Include="Entities\TestDto.cs" />
-    <Compile Include="Entities\UserDto.cs" />
-    <Compile Include="Entities\UserRoleDto.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Storage\User\UserRepository.cs" />
-    <Compile Include="Storage\User\UserService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-    <Folder Include="UnitOfWork\Core\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Base\Persistence\SampleAspNet.Persistence.csproj">
-      <Project>{B358BDE9-46BE-4A66-A580-465841A75A33}</Project>
+    <ProjectReference Include="..\..\..\Src\Base\Persistence\SampleAspNet.Persistence.csproj">
+      <Project>{b358bde9-46be-4a66-a580-465841a75a33}</Project>
       <Name>SampleAspNet.Persistence</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain\SampleAspNet.Domain.csproj">
-      <Project>{BB4B630F-AF2B-4371-997D-963132A6F372}</Project>
-      <Name>SampleAspNet.Domain</Name>
+    <ProjectReference Include="..\..\..\Src\Core\Application\SampleAspNet.Application.csproj">
+      <Project>{82f6f4e4-65ab-4d0f-a1e9-be7c2a134f2f}</Project>
+      <Name>SampleAspNet.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Generic\ApplicationGeneric.csproj">
+    <ProjectReference Include="..\..\..\Src\Core\Generic\ApplicationGeneric.csproj">
       <Project>{A79FBCF6-E971-4C53-8150-6BC5FB1D8778}</Project>
       <Name>ApplicationGeneric</Name>
     </ProjectReference>
