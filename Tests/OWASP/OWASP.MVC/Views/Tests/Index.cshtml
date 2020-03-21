@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SampleAspNet.Application.Entities.AnswerDto>
+
+@{
+    ViewBag.Title = "Answers";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Answers</h2>
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <tr class="thead-light">
+                <th>Answer</th>
+                <th>Question</th>
+                <th>Text</th>
+                <th>Suitable</th>
+                <th>Removed</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AnswerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.QuestionId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Text)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsSuitable)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsRemoved)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
