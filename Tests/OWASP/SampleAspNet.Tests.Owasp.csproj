@@ -48,7 +48,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Src\Clients\WebAPI\bin\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Src\Clients\WebAPI\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
@@ -244,7 +244,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Src\Core\Application\SampleAspNet.Application.csproj">
+    <ProjectReference Include="..\..\Src\Core\Application\SampleAspNet.Application.csproj">
       <Project>{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}</Project>
       <Name>SampleAspNet.Application</Name>
     </ProjectReference>

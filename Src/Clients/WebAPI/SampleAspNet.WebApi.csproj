@@ -116,7 +116,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DependencyInjection.cs" />
+    <Compile Include="WebApiContainerConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

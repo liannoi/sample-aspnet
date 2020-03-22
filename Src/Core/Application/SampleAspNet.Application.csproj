@@ -70,7 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInjection.cs" />
+    <Compile Include="DependencyInjectionModule.cs" />
     <Compile Include="Entities\AnswerDto.cs" />
     <Compile Include="Entities\GroupDto.cs" />
     <Compile Include="Entities\GroupTestDto.cs" />
