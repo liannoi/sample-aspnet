@@ -4,9 +4,9 @@ using SampleAspNet.Application.Entities;
 
 namespace SampleAspNet.Application.Storage.GroupTest
 {
-    public sealed class GroupTestRepository : BaseBusinessService<Domain.Entities.GroupTest, GroupTestDto>
+    public sealed class GroupTestsRepository : BaseBusinessService<Domain.Entities.GroupTest, GroupTestDto>
     {
-        public GroupTestRepository(IDataService<Domain.Entities.GroupTest> dataService) : base(dataService)
+        public GroupTestsRepository(IDataService<Domain.Entities.GroupTest> dataService) : base(dataService)
         {
             Mapper = InitializeMapper();
         }

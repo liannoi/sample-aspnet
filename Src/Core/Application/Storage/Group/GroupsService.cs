@@ -3,9 +3,9 @@ using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.Group
 {
-    public class GroupService : BaseDataService<Domain.Entities.Group>
+    public class GroupsService : BaseDataService<Domain.Entities.Group>
     {
-        public GroupService(DbContext context) : base(context)
+        public GroupsService(DbContext context) : base(context)
         {
         }
     }

@@ -140,6 +140,10 @@
       <Project>{82F6F4E4-65AB-4D0F-A1E9-BE7C2A134F2F}</Project>
       <Name>SampleAspNet.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Core\Domain\SampleAspNet.Domain.csproj">
+      <Project>{BB4B630F-AF2B-4371-997D-963132A6F372}</Project>
+      <Name>SampleAspNet.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -2,6 +2,8 @@
 using System.Web.Http.Cors;
 using Infrastructure.Application.Core.BusinessServices;
 using SampleAspNet.Application.Entities;
+using SampleAspNet.Application.Storage.Answer;
+using SampleAspNet.Domain.Exceptions;
 
 namespace SampleAspNet.WebApi.Controllers
 {
@@ -26,7 +28,14 @@ namespace SampleAspNet.WebApi.Controllers
         [Route("api/answers/{id}")]
         public IHttpActionResult Get(int id)
         {
-            return Ok(_answerService.Find(e => e.AnswerId == id));
+            try
+            {
+                return Ok(_answerService.FindSafe(e => e.AnswerId == id));
+            }
+            catch (EntityByPredicateNotFoundException e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         // Etc...

@@ -3,9 +3,9 @@ using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.Question
 {
-    public class QuestionService : BaseDataService<Domain.Entities.Question>
+    public class QuestionsService : BaseDataService<Domain.Entities.Question>
     {
-        public QuestionService(DbContext context) : base(context)
+        public QuestionsService(DbContext context) : base(context)
         {
         }
     }

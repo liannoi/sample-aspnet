@@ -4,9 +4,9 @@ using SampleAspNet.Application.Entities;
 
 namespace SampleAspNet.Application.Storage.Question
 {
-    public sealed class QuestionRepository : BaseBusinessService<Domain.Entities.Question, QuestionDto>
+    public sealed class QuestionsRepository : BaseBusinessService<Domain.Entities.Question, QuestionDto>
     {
-        public QuestionRepository(IDataService<Domain.Entities.Question> dataService) : base(dataService)
+        public QuestionsRepository(IDataService<Domain.Entities.Question> dataService) : base(dataService)
         {
             Mapper = InitializeMapper();
         }

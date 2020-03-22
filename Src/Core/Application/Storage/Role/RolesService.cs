@@ -3,9 +3,9 @@ using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.Role
 {
-    public class RoleService : BaseDataService<Domain.Entities.Role>
+    public class RolesService : BaseDataService<Domain.Entities.Role>
     {
-        public RoleService(DbContext context) : base(context)
+        public RolesService(DbContext context) : base(context)
         {
         }
     }

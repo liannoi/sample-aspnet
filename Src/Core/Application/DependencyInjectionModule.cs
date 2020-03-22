@@ -19,15 +19,15 @@ namespace SampleAspNet.Application
     {
         protected override void Load(ContainerBuilder builder)
         {
-            RegisterStorage<AnswerService, Answer, AnswerRepository, AnswerDto>(builder);
-            RegisterStorage<GroupService, Group, GroupRepository, GroupDto>(builder);
-            RegisterStorage<GroupTestService, GroupTest, GroupTestRepository, GroupTestDto>(builder);
-            RegisterStorage<QuestionService, Question, QuestionRepository, QuestionDto>(builder);
-            RegisterStorage<RoleService, Role, RoleRepository, RoleDto>(builder);
-            RegisterStorage<StudentTestService, StudentTest, StudentTestRepository, StudentTestDto>(builder);
-            RegisterStorage<TestService, Test, TestRepository, TestDto>(builder);
-            RegisterStorage<UserService, User, UserRepository, UserDto>(builder);
-            RegisterStorage<UserRoleService, UserRole, UserRoleRepository, UserRoleDto>(builder);
+            RegisterStorage<AnswersService, Answer, AnswersRepository, AnswerDto>(builder);
+            RegisterStorage<GroupsService, Group, GroupsRepository, GroupDto>(builder);
+            RegisterStorage<GroupTestsService, GroupTest, GroupTestsRepository, GroupTestDto>(builder);
+            RegisterStorage<QuestionsService, Question, QuestionsRepository, QuestionDto>(builder);
+            RegisterStorage<RolesService, Role, RolesRepository, RoleDto>(builder);
+            RegisterStorage<StudentTestsService, StudentTest, StudentTestsRepository, StudentTestDto>(builder);
+            RegisterStorage<TestsService, Test, TestsRepository, TestDto>(builder);
+            RegisterStorage<UsersService, User, UsersRepository, UserDto>(builder);
+            RegisterStorage<UserRolesService, UserRole, UserRolesRepository, UserRoleDto>(builder);
         }
 
         // ReSharper disable once MemberCanBeMadeStatic.Local

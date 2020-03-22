@@ -21,7 +21,7 @@ namespace SampleAspNet.WebUI.Controllers
         }
 
         [HttpGet]
-        public async Task<ViewResult> IndexMvc()
+        public async Task<ViewResult> Sample()
         {
             return View(await _apiFetcher.FetchAsync<AnswerDto>("https://localhost:44398/api/answers"));
         }

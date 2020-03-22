@@ -3,9 +3,9 @@ using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.GroupTest
 {
-    public class GroupTestService : BaseDataService<Domain.Entities.GroupTest>
+    public class GroupTestsService : BaseDataService<Domain.Entities.GroupTest>
     {
-        public GroupTestService(DbContext context) : base(context)
+        public GroupTestsService(DbContext context) : base(context)
         {
         }
     }

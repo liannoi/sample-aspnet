@@ -3,9 +3,9 @@ using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.Test
 {
-    public class TestService : BaseDataService<Domain.Entities.Test>
+    public class TestsService : BaseDataService<Domain.Entities.Test>
     {
-        public TestService(DbContext context) : base(context)
+        public TestsService(DbContext context) : base(context)
         {
         }
     }

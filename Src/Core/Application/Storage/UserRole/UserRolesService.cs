@@ -3,9 +3,9 @@ using Infrastructure.Application.Core.DataServices;
 
 namespace SampleAspNet.Application.Storage.UserRole
 {
-    public class UserRoleService : BaseDataService<Domain.Entities.UserRole>
+    public class UserRolesService : BaseDataService<Domain.Entities.UserRole>
     {
-        public UserRoleService(DbContext context) : base(context)
+        public UserRolesService(DbContext context) : base(context)
         {
         }
     }
