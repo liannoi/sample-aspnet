@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNet.WebUI", "Src\C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "owasp", "owasp", "{E00CC23C-CCCB-4881-8394-CB0649C459EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNet.Tests.Owasp", "Tests\OWASP\OWASP.MVC\SampleAspNet.Tests.Owasp.csproj", "{49EF9913-6AEA-468D-8429-2FDF652B58F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNet.Tests.Owasp", "Tests\OWASP\SampleAspNet.Tests.Owasp.csproj", "{49EF9913-6AEA-468D-8429-2FDF652B58F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
